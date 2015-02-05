@@ -1,0 +1,27 @@
+{
+  "name": "intern-feedback-helloworld",
+  "version": "1.0.0",
+  "description": "Repository with all sources used in a technical blog post on https://blog.groupe-sii.com",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "",
+    "test-coverage": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vogloblinsky/intern-feedback-helloworld.git"
+  },
+  "keywords": [
+    "intern",
+    "javascript",
+    "bdd"
+  ],
+  "author": "Vincent Ogloblinsky",
+  "bugs": {
+    "url": "https://github.com/vogloblinsky/intern-feedback-helloworld/issues"
+  },
+  "homepage": "https://github.com/vogloblinsky/intern-feedback-helloworld"
+}

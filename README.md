@@ -13,5 +13,3 @@ IDE
 ``` shell
  uncss src/index.html > src/css/bootstrap-yeti-light.css
 ```
-
-- 

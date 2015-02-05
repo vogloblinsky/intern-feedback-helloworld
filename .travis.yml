@@ -3,10 +3,11 @@ node_js:
     - '0.10'
 addons:
     sauce_connect: true
+
 env:
   global:
-    	- secure: iX/oj0SzM/P+doXFG8Vnx6+Eeo4hl29wpG2vJs2zDPudm44MfLgdTafzX0Mw9YgrYJ2oFq594Iw6+nbU9BhckGo02lRLfhhZ38uyVdxshgK2rBpOVNHZ64b7gohh8s049gAEObxRonekF1yxtYwn6d+APQvLKQHHTcHQubwfjqw=
-    	- secure: CUBW7mKgbZkyFa1OK4Bu/OG4aO9JgoWbtIrqPHftwD002FtTfgd4oUu32wjQ5Tp9Oq8/9mBmC3O3lN4vGTTts0EtVSzHlfroySFfPkHrtD9gxuikKNQ9qe5+7ltZP7bbAItDGMcZBqaylYvvmNVNXeLOnhzMlxnqCbGVTUPf6X0=
+        - secure: iX/oj0SzM/P+doXFG8Vnx6+Eeo4hl29wpG2vJs2zDPudm44MfLgdTafzX0Mw9YgrYJ2oFq594Iw6+nbU9BhckGo02lRLfhhZ38uyVdxshgK2rBpOVNHZ64b7gohh8s049gAEObxRonekF1yxtYwn6d+APQvLKQHHTcHQubwfjqw=
+        - secure: CUBW7mKgbZkyFa1OK4Bu/OG4aO9JgoWbtIrqPHftwD002FtTfgd4oUu32wjQ5Tp9Oq8/9mBmC3O3lN4vGTTts0EtVSzHlfroySFfPkHrtD9gxuikKNQ9qe5+7ltZP7bbAItDGMcZBqaylYvvmNVNXeLOnhzMlxnqCbGVTUPf6X0=
 
 install:
     - npm install

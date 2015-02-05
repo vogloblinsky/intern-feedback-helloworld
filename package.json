@@ -7,8 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "",
-    "test-coverage": ""
+    "test-js": "intern-runner config=test/intern-js",
+    "test-js-local": "intern-runner config=test/intern-js.local",
+    "test-ng": "",
+    "test-all": ""
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/vogloblinsky/intern-feedback-helloworld/issues"
   },
-  "homepage": "https://github.com/vogloblinsky/intern-feedback-helloworld"
+  "homepage": "https://github.com/vogloblinsky/intern-feedback-helloworld",
+  "dependencies": {
+    "intern": "^2.2.2"
+  }
 }

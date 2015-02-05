@@ -6,8 +6,33 @@
         <title>Intern.io feedback hello world</title>
         <meta name="description" content="Intern.io feedback hello world">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-yeti-light.css">
     </head>
     <body ng-app="intern-feedback-helloworld">
+
+        <div class="container">
+
+            <div class="page-header">
+                <h2>Temperature converter</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group col-lg-4 content-right">
+                        <span class="input-group-addon">&deg;C</span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group col-lg-4 content-left">
+                        <span class="input-group-addon">&deg;F</span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
         
         <!-- build:js js/external.js -->
         <script src="vendor/angularjs/angular.js"></script>

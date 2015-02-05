@@ -9,7 +9,7 @@
   "scripts": {
     "test": "intern-runner config=test/intern",
     "test-local": "intern-runner config=test/intern.local",
-    "test-local-coverage": "intern-runner config=test/intern.local reporters=lcovhtml"
+    "test-local-coverage": "intern-runner config=test/intern.local reporters=lcovhtml reporters=junit"
   },
   "repository": {
     "type": "git",

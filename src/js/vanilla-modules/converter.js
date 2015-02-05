@@ -1,7 +1,8 @@
-var converter = (function() {
+var temperatureConverter = (function() {
 
 	var waterFreezingTemperature = 32, //(°F)
-		coefficient = 1.8;
+		coefficient = 1.8,
+		precision = 100;
 
 	/**
 	 * celsiusToFahrenheit Convert celsius to fahrenheit temperature
@@ -9,7 +10,7 @@ var converter = (function() {
 	 * @return {number} fahrenheit temperature
 	 */
 	var celsiusToFahrenheit = function(celsiusValue) {
-		return (celsiusValue*coefficient) + waterFreezingTemperature;
+		return Math.floor( ((celsiusValue*coefficient) + waterFreezingTemperature) * precision) / precision;
 	};
 
 	/**
@@ -18,7 +19,7 @@ var converter = (function() {
 	 * @return {number} celsius temperature
 	 */
 	var fahrenheitToCelsius = function(fahrenheitValue) {
-		return (fahrenheitValue - waterFreezingTemperature)/coefficient;
+		return Math.floor( ((fahrenheitValue - waterFreezingTemperature)/coefficient) * precision) / precision;
 	};
 
 	return {

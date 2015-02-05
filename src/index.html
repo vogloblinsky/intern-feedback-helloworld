@@ -1,47 +1,57 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Intern.io feedback hello world</title>
-        <meta name="description" content="Intern.io feedback hello world">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-yeti-light.css">
-    </head>
-    <body ng-app="intern-feedback-helloworld">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Intern.io feedback hello world</title>
+    <meta name="description" content="Intern.io feedback hello world">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="container">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-yeti-light.css">
+</head>
 
-            <div class="page-header">
-                <h2>Temperature converter</h2>
-            </div>
+<body ng-app="intern-feedback-helloworld" ng-controller="ConverterCtrl">
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="input-group col-lg-4 content-right">
-                        <span class="input-group-addon">&deg;C</span>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="input-group col-lg-4 content-left">
-                        <span class="input-group-addon">&deg;F</span>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            
+    <div class="container">
+
+        <div class="page-header">
+            <h2>Temperature converter</h2>
         </div>
-        
-        <!-- build:js js/external.js -->
-        <script src="vendor/angularjs/angular.js"></script>
-        <!-- endbuild -->
 
-        <!-- build:js js/external.js -->
-        <script src="js/app.js"></script>
-        <script src="js/vanilla-modules/converter.js"></script>
-        <!-- endbuild -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group col-lg-4 content-right">
+                    <span class="input-group-addon">&deg;C</span>
+                    <input type="number" class="form-control" 
+                        ng-model="celsiusTemperature"
+                        ng-change="markEdited('C')">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group col-lg-4 content-left">
+                    <span class="input-group-addon">&deg;F</span>
+                    <input type="number" class="form-control"
+                        ng-model="fahrenheitTemperature"
+                        ng-change="markEdited('F')">
+                </div>
+            </div>
+        </div>
 
-    </body>
+    </div>
+
+    <!-- build:js js/external.js -->
+    <script src="vendor/angularjs/angular.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/external.js -->
+    <script src="js/vanilla-modules/converter.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/converterCtrl.js"></script>
+    <script src="js/filters/temperatureFilter.js"></script>
+    <!-- endbuild -->
+
+</body>
+
 </html>

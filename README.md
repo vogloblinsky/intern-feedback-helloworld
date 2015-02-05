@@ -5,8 +5,8 @@ Repository with all sources used in a technical blog post on https://blog.groupe
 
 ## Requirements
 
-Node.js
-IDE
+- Node.js
+- IDE
 
 ### Informations
 

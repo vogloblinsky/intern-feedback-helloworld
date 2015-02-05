@@ -7,10 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test-js": "intern-runner config=test/intern-js",
-    "test-js-local": "intern-runner config=test/intern-js.local",
-    "test-ng": "",
-    "test-all": ""
+    "test": "intern-runner config=test/intern-js",
+    "test-local": "intern-runner config=test/intern-js.local",
+    "test-local-coverage": "intern-runner config=test/intern-js.local reporters=lcovhtml"
   },
   "repository": {
     "type": "git",

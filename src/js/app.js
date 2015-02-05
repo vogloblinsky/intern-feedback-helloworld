@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('intern-feedback-helloworld', []);
+angular.module('temperature-converter', ['temperature-converter.filters']);

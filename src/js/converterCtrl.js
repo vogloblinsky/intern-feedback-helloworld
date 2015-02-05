@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('intern-feedback-helloworld')
+angular.module('temperature-converter')
     .controller('ConverterCtrl', [
         '$scope',
         'celsiusToFahrenheitFilter',

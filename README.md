@@ -7,11 +7,30 @@ Repository with all sources used in a technical blog post on https://blog.groupe
 
 - Node.js
 - IDE
+- Bower
+
+## Installation
+
+``` shell
+npm install & bower install
+```
 
 ### Informations
 
 - the bootstrap theme has been shrinked with uncss
 
 ``` shell
- uncss src/index.html > src/css/bootstrap-yeti-light.css
+uncss src/index.html > src/css/bootstrap-yeti-light.css
+```
+
+- run local test using a selenium-server-standalone running and this command :
+
+``` shell
+npm run test-local
+```
+
+- code coverage cand be also generated with this command :
+
+``` shell
+npm run test-local-coverage
 ```

@@ -1,5 +1,3 @@
-/*global angular*/
-
 define([
     'intern/chai!expect',
     'intern!bdd',

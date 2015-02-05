@@ -1,5 +1,3 @@
 {
- 	"directory": "src/vendor/",
- 	"proxy":"http://proxy.rennes.sii.fr:3128",
-    "https-proxy":"http://proxy.rennes.sii.fr:3128"
+ 	"directory": "src/vendor/"
 }

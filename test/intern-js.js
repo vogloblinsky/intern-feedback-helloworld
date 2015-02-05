@@ -43,7 +43,7 @@ define({
 		// Packages that should be registered with the loader in each testing environment
 		packages: [
 			{
-				name: 'angular', location: 'src/vendor/angular'
+				name: 'angular', location: 'src/vendor/angularjs/'
 			},
 			{
 				name: 'src', location: 'src/js'
@@ -53,7 +53,8 @@ define({
 
 	// Non-functional test suite(s) to run in each browser
 	suites: [
-		'test/js/temperatureConverter'
+		'test/js/temperatureConverter',
+		'test/ng/temperatureFilter'
 	],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis

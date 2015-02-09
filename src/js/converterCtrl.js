@@ -16,7 +16,8 @@ angular.module('temperature-converter')
 			};
 
             $scope.$watch('celsiusTemperature', function(newValue, oldValue) {
-            	if (newValue !== oldValue && $scope.editedInput === 'C') {
+            	if ( (newValue !== oldValue && $scope.editedInput === 'C')
+                     || (newValue === oldValue && $scope.editedInput === null)) {
                     $scope.fahrenheitTemperature = celsiusToFahrenheitFilter(newValue);
                 }
             });

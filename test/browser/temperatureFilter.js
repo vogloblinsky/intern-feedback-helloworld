@@ -4,9 +4,9 @@ define([
     'intern/chai!expect',
     'intern!bdd',
     'intern/order!angular/angular',
-    'intern/order!src/vanilla-modules/temperatureConverter',
-    'intern/order!src/filters/converter-filters',
-    'intern/order!src/filters/temperatureFilter'
+    'internalSrc/vanilla-modules/temperatureConverter',
+    'intern/order!internalSrc/filters/converter-filters',
+    'intern/order!internalSrc/filters/temperatureFilter'
 ], function(expect, bdd) {
 
     function inject(fn) {

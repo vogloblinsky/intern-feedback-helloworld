@@ -1,7 +1,7 @@
 define([
     'intern/chai!expect',
     'intern!bdd',
-    'intern/order!src/vanilla-modules/temperatureConverter'
+    'internalSrc/vanilla-modules/temperatureConverter'
 ], function(expect, bdd) {
 
     bdd.describe('temperatureConverter module', function() {

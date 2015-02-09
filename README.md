@@ -12,7 +12,7 @@ Repository with all sources used in a technical blog post on https://blog.groupe
 ## Installation
 
 ``` shell
-npm install & bower install
+npm install
 ```
 
 ### Informations

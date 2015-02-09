@@ -10,8 +10,7 @@ env:
         - secure: CUBW7mKgbZkyFa1OK4Bu/OG4aO9JgoWbtIrqPHftwD002FtTfgd4oUu32wjQ5Tp9Oq8/9mBmC3O3lN4vGTTts0EtVSzHlfroySFfPkHrtD9gxuikKNQ9qe5+7ltZP7bbAItDGMcZBqaylYvvmNVNXeLOnhzMlxnqCbGVTUPf6X0=
 
 install:
-    - npm install
     - npm install -g bower
-    - bower install
+    - npm install
 script: 
     - npm run test-all

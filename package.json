@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "postinstall": "bower install",
     "test-browser": "intern-runner config=test/intern-browser",
     "test-browser-local": "intern-runner config=test/intern-browser.local",
     "test-browser-local-coverage": "intern-runner config=test/intern-browser.local reporters=junit-sii-reporter",

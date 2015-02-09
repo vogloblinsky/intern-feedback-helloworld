@@ -19,7 +19,6 @@ define([
                 .findByName('fahrenheitInput')
                 .getProperty('value')
                 .then(function (value) {
-                    console.log('value: ', value);
                     assert.strictEqual(value, '33.79', 'Temperature parsed');
                 });
         }

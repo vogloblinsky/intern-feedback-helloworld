@@ -7,9 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "intern-runner config=test/intern",
-    "test-local": "intern-runner config=test/intern.local",
-    "test-local-coverage": "intern-runner config=test/intern.local reporters=lcovhtml reporters=junit"
+    "test-browser": "intern-runner config=test/intern-browser",
+    "test-browser-local": "intern-runner config=test/intern-browser.local",
+    "test-browser-local-coverage": "intern-runner config=test/intern-browser.local reporters=junit-sii-reporter",
+    "test-vanilla": "intern-client config=test/intern-vanilla",
+    "test-all": "intern-client config=test/intern-vanilla && intern-runner config=test/intern-browser"
   },
   "repository": {
     "type": "git",

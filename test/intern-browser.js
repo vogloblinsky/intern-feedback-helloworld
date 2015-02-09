@@ -3,10 +3,10 @@
 // packages, suites, excludeInstrumentation, and (if you want functional tests) functionalSuites.
 define({
 	// The port on which the instrumenting proxy will listen
-	proxyPort: 9000,
+	proxyPort: 9002,
 
 	// A fully qualified URL to the Intern proxy
-	proxyUrl: 'http://localhost:9000/',
+	proxyUrl: 'http://localhost:9002/',
 
 	// Default desired capabilities for all environments. Individual capabilities can be overridden by any of the
 	// specified browser environments in the `environments` array below as well. See
@@ -46,15 +46,14 @@ define({
 				name: 'angular', location: 'src/vendor/angularjs/'
 			},
 			{
-				name: 'src', location: 'src/js'
+				name: 'internalSrc', location: 'src/js'
 			}
 		]
 	},
 
 	// Non-functional test suite(s) to run in each browser
 	suites: [
-		'test/js/temperatureConverter',
-		'test/ng/temperatureFilter'
+		'test/browser/temperatureFilter'
 	],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis

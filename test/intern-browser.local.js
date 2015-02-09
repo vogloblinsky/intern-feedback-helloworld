@@ -1,5 +1,5 @@
 define([
-    './intern'
+    './intern-browser'
 ], function(intern) {
     intern.tunnel = 'NullTunnel';
     intern.tunnelOptions = {

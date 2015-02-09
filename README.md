@@ -34,3 +34,7 @@ npm run test-local
 ``` shell
 npm run test-local-coverage
 ```
+
+- run your Selenium local for browser tests
+
+cd /usr/lib/selenium && java -jar selenium-server-standalone.jar

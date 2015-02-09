@@ -11,9 +11,16 @@ define([
         'convert form': function () {
             return this.remote
                 .get(require.toUrl(url))
-                .getPageTitle()
-                .then(function (title) {
-                    assert.strictEqual(title, 'Intern.io feedback hello world', 'Title parsed');
+                
+                .findByName('celsiusInput')
+                .click()
+                .pressKeys('1').end()
+
+                .findByName('fahrenheitInput')
+                .getProperty('value')
+                .then(function (value) {
+                    console.log('value: ', value);
+                    assert.strictEqual(value, '33.79', 'Temperature parsed');
                 });
         }
     });

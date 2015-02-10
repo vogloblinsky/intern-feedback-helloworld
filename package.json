@@ -10,7 +10,7 @@
     "postinstall": "bower install",
     "test-browser": "intern-runner config=test/intern-browser",
     "test-browser-local": "intern-runner config=test/intern-browser.local",
-    "test-browser-local-coverage": "intern-runner config=test/intern-browser.local reporters=junit-sii-reporter",
+    "test-browser-local-coverage": "intern-runner config=test/intern-browser.local reporters=junit",
     "test-vanilla": "intern-client config=test/intern-vanilla",
     "test-all": "intern-client config=test/intern-vanilla && intern-runner config=test/intern-browser",
     "test-karma": "./node_modules/karma/bin/karma start test-karma/karma.conf.js"

@@ -12,7 +12,8 @@
     "test-browser-local": "intern-runner config=test/intern-browser.local",
     "test-browser-local-coverage": "intern-runner config=test/intern-browser.local reporters=junit-sii-reporter",
     "test-vanilla": "intern-client config=test/intern-vanilla",
-    "test-all": "intern-client config=test/intern-vanilla && intern-runner config=test/intern-browser"
+    "test-all": "intern-client config=test/intern-vanilla && intern-runner config=test/intern-browser",
+    "test-karma": "./node_modules/karma/bin/karma start test-karma/karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,14 @@
   "homepage": "https://github.com/vogloblinsky/intern-feedback-helloworld",
   "dependencies": {
     "intern": "^2.2.2"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-coverage": "^0.2.7",
+    "karma-jasmine": "^0.3.5",
+    "karma-junit-reporter": "^0.2.2",
+    "karma-story-reporter": "^0.3.1"
   }
 }

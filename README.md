@@ -1,5 +1,5 @@
 # Intern-feedback-helloworld
-Repository with all sources used in a technical blog post on https://blog.groupe-sii.com
+Repository with all sources used in a technical blog post on https://blog.groupe-sii.com/the-intern-retour-sur-la-prochaine-generation-doutils-de-tests-javascript/
 
 [![Dependency Status](https://david-dm.org/vogloblinsky/intern-feedback-helloworld.png)](https://david-dm.org/vogloblinsky/intern-feedback-helloworld)
 [![devdependencies](https://david-dm.org/vogloblinsky/intern-feedback-helloworld/dev-status.png)](https://david-dm.org/vogloblinsky/intern-feedback-helloworld#info=devDependencies)

@@ -1,6 +1,8 @@
 # Intern-feedback-helloworld
 Repository with all sources used in a technical blog post on https://blog.groupe-sii.com
 
+[![Dependency Status](https://david-dm.org/vogloblinsky/intern-feedback-helloworld.png)](https://david-dm.org/vogloblinsky/intern-feedback-helloworld)
+[![devdependencies](https://david-dm.org/vogloblinsky/intern-feedback-helloworld/dev-status.png)](https://david-dm.org/vogloblinsky/intern-feedback-helloworld#info=devDependencies)
 [![Build Status](https://travis-ci.org/vogloblinsky/intern-feedback-helloworld.svg?branch=master)](https://travis-ci.org/vogloblinsky/intern-feedback-helloworld)
 
 ## Requirements

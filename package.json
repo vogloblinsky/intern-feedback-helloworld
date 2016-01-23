@@ -1,6 +1,6 @@
 {
   "name": "intern-feedback-helloworld",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Repository with all sources used in a technical blog post on https://blog.groupe-sii.com",
   "main": "index.js",
   "directories": {
@@ -8,9 +8,10 @@
   },
   "scripts": {
     "postinstall": "bower install",
-    "test-browser": "intern-runner config=test/intern-browser",
-    "test-browser-local": "intern-runner config=test/intern-browser.local",
-    "test-browser-local-coverage": "intern-runner config=test/intern-browser.local reporters=junit",
+    "test-browser-ng": "intern-runner config=test/intern-browser-ng",
+    "test-browser-ng-local": "intern-runner config=test/intern-browser-ng.local",
+    "test-functional": "intern-runner config=test/intern-functional",
+    "test-functional-local": "intern-runner config=test/intern-functional.local",
     "test-vanilla": "intern-client config=test/intern-vanilla",
     "test-all": "intern-client config=test/intern-vanilla && intern-runner config=test/intern-browser",
     "test-karma": "./node_modules/karma/bin/karma start test-karma/karma.conf.js"
@@ -30,7 +31,7 @@
   },
   "homepage": "https://github.com/vogloblinsky/intern-feedback-helloworld",
   "dependencies": {
-    "intern": "^2.2.2"
+    "intern": "^3.0.6"
   },
   "devDependencies": {
     "jasmine-core": "^2.2.0",

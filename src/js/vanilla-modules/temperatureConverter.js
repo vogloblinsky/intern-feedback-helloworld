@@ -1,6 +1,7 @@
 var temperatureConverter = (function() {
 
-    var waterFreezingTemperature = 32, //in °F
+	// in °F
+    var waterFreezingTemperature = 32,
         coefficient = 1.8,
         precision = 100;
 

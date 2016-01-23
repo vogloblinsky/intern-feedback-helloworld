@@ -36,6 +36,8 @@
     "intern": "^3.0.6"
   },
   "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-replace": "^0.5.4",
     "jasmine-core": "^2.2.0",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.7",

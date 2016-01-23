@@ -14,7 +14,7 @@ module.exports = function(config) {
             source: 'coverage'
         },
         reporters: ['progress', 'junit'],
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
         logLevel: config.LOG_INFO,
         colors: true,
         singleRun: true,

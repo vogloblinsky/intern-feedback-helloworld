@@ -4,7 +4,7 @@ define([
     'internalSrc/vanilla-modules/temperatureConverter'
 ], function(expect, bdd) {
 
-    bdd.describe('temperatureConverter module', function() {
+    bdd.describe('src.js.vanilla-modules.temperatureConverter', function() {
 
         bdd.it('should convert a celsius temperature to fahrenheit', function() {
             expect(temperatureConverter.celsiusToFahrenheit(5)).to.equal(41);

@@ -11,13 +11,12 @@ angular.module('temperature-converter')
             $scope.fahrenheitTemperature = 0;
 
             $scope.editedInput = null;
-			$scope.markEdited = function(which) {
-				$scope.editedInput = which;
-			};
+            $scope.markEdited = function(which) {
+                $scope.editedInput = which;
+            };
 
             $scope.$watch('celsiusTemperature', function(newValue, oldValue) {
-            	if ( (newValue !== oldValue && $scope.editedInput === 'C')
-                     || (newValue === oldValue && $scope.editedInput === null)) {
+                if ((newValue !== oldValue && $scope.editedInput === 'C') ||  (newValue === oldValue && $scope.editedInput === null)) {
                     $scope.fahrenheitTemperature = celsiusToFahrenheitFilter(newValue);
                 }
             });

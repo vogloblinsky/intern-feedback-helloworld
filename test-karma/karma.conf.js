@@ -1,25 +1,25 @@
 // Karma configuration
 module.exports = function(config) {
 
-	var source = 'src/js/vanilla-modules/temperatureConverter.js';
+    var source = 'src/js/vanilla-modules/temperatureConverter.js';
 
     config.set({
         basePath: '../',
         frameworks: ['jasmine'],
         files: [
-            sources,
+            source,
             'test-karma/temperatureConverter.js'
         ],
         preprocessors: {
             source: 'coverage'
         },
-        reporters: ['progress', 'junit', 'story', 'coverage'],
+        reporters: ['progress', 'junit'],
         browsers: ['Chrome'],
         logLevel: config.LOG_INFO,
         colors: true,
         singleRun: true,
         junitReporter: {
-            outputFile: 'test-karma-results.xml',
+            outputFile: 'build/quality/test-karma-results.xml',
             suite: ''
         },
         coverageReporter: {

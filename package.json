@@ -8,6 +8,7 @@
   },
   "scripts": {
     "postinstall": "bower install",
+    "init-test": "./test/init.sh",
     "test-browser-ng": "intern-runner config=test/intern-browser-ng",
     "test-browser-ng-local": "intern-runner config=test/intern-browser-ng.local",
     "test-functional": "intern-runner config=test/intern-functional",

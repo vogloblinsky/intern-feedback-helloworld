@@ -15,7 +15,8 @@
     "test-functional-local": "intern-runner config=test/intern-functional.local",
     "test-vanilla": "intern-client config=test/intern-vanilla",
     "test-all": "intern-client config=test/intern-vanilla && intern-runner config=test/intern-browser",
-    "test-karma": "./node_modules/karma/bin/karma start test-karma/karma.conf.js"
+    "test-karma": "./node_modules/karma/bin/karma start test-karma/karma.conf.js",
+    "merge-lcov": "./node_modules/.bin/lcov-result-merger 'build/quality/**/*.info' 'build/quality/final_lcov.info'"
   },
   "repository": {
     "type": "git",

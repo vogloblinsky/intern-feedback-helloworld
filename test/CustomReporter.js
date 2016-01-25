@@ -84,14 +84,13 @@ define([
 	};
 
 	function createSuiteNode(suite) {
-		return new XmlNode('testsuite', {
-			name: suite.name,
-			failures: suite.numFailedTests,
-			skipped: suite.numSkippedTests,
-			tests: suite.numTests,
-			time: suite.timeElapsed / 1000,
-			childNodes: suite.tests.map(createTestNode)
-		});
+		console.log(suite);
+		if(suite.name !== null) {
+			return new XmlNode('file', {
+				path: suite.name,
+				childNodes: suite.tests.map(createTestNode)
+			});
+		} e
 	}
 
 	function createTestNode(test) {
@@ -99,11 +98,9 @@ define([
 			return createSuiteNode(test);
 		}
 
-		var node = new XmlNode('testcase', {
+		var node = new XmlNode('testCase', {
 			name: test.name,
-			classname: test.parent.name,
-			time: test.timeElapsed / 1000,
-			status: test.error ? 1 : 0
+			duration: test.timeElapsed / 1000
 		});
 
 		if (test.error) {
@@ -129,12 +126,13 @@ define([
 	}
 
 	JUnit.prototype.runEnd = function (executor) {
-		var rootNode = new XmlNode('testsuites');
+		var rootNode = new XmlNode('unitTest');
+		//console.log(executor);
 		executor.suites.forEach(function (suite) {
-			rootNode.childNodes.push(createSuiteNode(suite));
+			rootNode.childNodes.push(createSuiteNode(suite.tests[0]));
 		});
 
-		var report = '<?xml version="1.0" encoding="UTF-8" ?>' + rootNode.toString() + '\n';
+		var report = rootNode.toString();
 		this.output.end(report);
 	};
 

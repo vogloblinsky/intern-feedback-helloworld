@@ -11,7 +11,7 @@ define([
         });
 
         bdd.it('should convert a fahrenheit temperature to celsius', function() {
-            expect(temperatureConverter.fahrenheitToCelsius(41)).to.equal(6);
+            expect(temperatureConverter.fahrenheitToCelsius(41)).to.equal(5);
         });
 
     });

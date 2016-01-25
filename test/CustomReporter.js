@@ -83,14 +83,21 @@ define([
 		}
 	};
 
+	/**
+	 * Convert toto.tata to toto/tata.js
+	 **/
+	function parseSuiteNameForFilePath(name) {
+		console.log(name.replace(/\./g, '/'));
+		return name.replace(/\./g, '/') + '.js';
+	}
+
 	function createSuiteNode(suite) {
-		console.log(suite);
 		if(suite.name !== null) {
 			return new XmlNode('file', {
-				path: suite.name,
+				path: parseSuiteNameForFilePath(suite.name),
 				childNodes: suite.tests.map(createTestNode)
 			});
-		} e
+		}
 	}
 
 	function createTestNode(test) {

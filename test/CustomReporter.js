@@ -87,7 +87,6 @@ define([
 	 * Convert toto.tata to toto/tata.js
 	 **/
 	function parseSuiteNameForFilePath(name) {
-		console.log(name.replace(/\./g, '/'));
 		return name.replace(/\./g, '/') + '.js';
 	}
 
@@ -113,8 +112,7 @@ define([
 		if (test.error) {
 			node.createNode(test.error.name === 'AssertionError' ? 'failure' : 'error', {
 				childNodes: [ util.getErrorMessage(test.error) ],
-				message: test.error.message,
-				type: test.error.name
+				message: test.error.message
 			});
 		}
 		else if (test.skipped != null) {

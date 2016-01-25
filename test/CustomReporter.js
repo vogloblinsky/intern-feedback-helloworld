@@ -126,7 +126,7 @@ define([
 	}
 
 	JUnit.prototype.runEnd = function (executor) {
-		var rootNode = new XmlNode('unitTest');
+		var rootNode = new XmlNode('unitTest', {version: '1'});
 		//console.log(executor);
 		executor.suites.forEach(function (suite) {
 			rootNode.childNodes.push(createSuiteNode(suite.tests[0]));

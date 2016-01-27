@@ -13,4 +13,5 @@ install:
     - npm install -g bower
     - npm install
 script: 
+    - npm run init-test
     - npm run test-all

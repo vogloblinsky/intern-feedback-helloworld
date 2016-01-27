@@ -17,7 +17,9 @@ Repository with all sources used in a technical blog post on https://blog.groupe
 npm install
 ```
 
-### Informations
+## Informations
+
+- updated to support Intern v3 (https://theintern.github.io)
 
 - the bootstrap theme has been shrinked with uncss
 

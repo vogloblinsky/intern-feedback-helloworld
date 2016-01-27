@@ -14,12 +14,15 @@ define({
 
     reporters: [{
         id: 'Lcov',
-        filename: 'build/quality/vanilla/lcov.info' // Directory needs to exist before
+        filename: 'tests-reports/vanilla/lcov.info' // Directory needs to exist before
     }, {
         id: 'Console'
     }, {
         id: 'test/CustomReporter',
-        filename: 'build/quality/vanilla/junit.xml' // Directory needs to exist before
+        filename: 'tests-reports/vanilla/junit-custom.xml' // Directory needs to exist before
+    }, {
+        id: 'JUnit',
+        filename: 'tests-reports/vanilla/junit.xml' // Directory needs to exist before
     }],
 
     // Non-functional test suite(s) to run in each browser

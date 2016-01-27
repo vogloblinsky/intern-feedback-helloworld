@@ -9,10 +9,10 @@ define([
 
     intern.reporters = [{
         id: 'JUnit',
-        filename: 'build/quality/functional/junit.xml' // Directory needs to exist before
+        filename: 'tests-reports/functional/junit.xml' // Directory needs to exist before
     }, {
         id: 'Lcov',
-        filename: 'build/quality/functional/lcov.info' // Directory needs to exist before
+        filename: 'tests-reports/functional/lcov.info' // Directory needs to exist before
     }, {
         id: 'Console'
     }];
